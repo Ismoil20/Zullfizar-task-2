@@ -1,0 +1,111 @@
+.contact_bground_color {
+  background: #f3f3f3;
+  margin-top: 20px;
+}
+
+.Contact_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .contact_text {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .contact_imgs {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      h5 {
+        color: #000;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+    p {
+      color: #000;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      max-width: 330px;
+      text-align: start;
+    }
+  }
+}
+@media screen and (min-width: 696px) {
+  #container {
+    max-width: 93%;
+    margin: 0 auto;
+  }
+  .contact_bground_color {
+    margin-top: 32px;
+  }
+  .Contact_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contact_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      p {
+        max-width: 684px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 960px) {
+  #container {
+    max-width: 93.75%;
+    margin: 0 auto;
+  }
+
+  .Contact_section {
+    display: flex;
+    flex-direction: row;
+    // gap: 61px;
+    justify-content: space-between;
+    .contact_text {
+      margin-top: 39px;
+      margin-bottom: 39px;
+
+      p {
+        max-width: 200px;
+      }
+    }
+  }
+  .Contact_section {
+    .contact_text > p:nth-child(2) {
+      max-width: 279px;
+    }
+  }
+}
+@media screen and (min-width: 1140px) {
+  #container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .Contact_section {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 30px;
+    .contact_text {
+      padding-left: 70px;
+      padding-right: 70px;
+      p {
+        max-width: 390px;
+      }
+    }
+  }
+
+  .Contact_section {
+    .contact_text > p:nth-child(2) {
+      max-width: 390px;
+    }
+  }
+}
