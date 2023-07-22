@@ -27,6 +27,8 @@ footer {
         align-items: start;
         gap: 10px;
         justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
 
         .logo-container {
           h4 {
@@ -139,6 +141,8 @@ footer {
       flex-direction: row;
       align-items: start;
       justify-content: space-between;
+      padding-left: 30px;
+      padding-right: 30px;
       .footer-logo {
         h2 {
           width: 140px;
@@ -174,5 +178,8 @@ footer {
         }
       }
     }
+  }
+  p {
+    max-width: 300px;
   }
 }
